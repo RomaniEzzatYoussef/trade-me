@@ -1,0 +1,7 @@
+{
+  "name": "trade-me",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
