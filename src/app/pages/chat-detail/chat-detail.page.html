@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/tabs/chats"></ion-back-button>
+    </ion-buttons>
+
+    <ion-item lines="none" class="user-toolbar" *ngIf="user">
+      <ion-avatar slot="start">
+        <img [src]="user.avatar">
+      </ion-avatar>
+      <ion-label class="ion-no-margin">
+        {{user.first_name}} {{user.last_name}}
+        <p class="ion-no-margin">
+          two minutes ago
+        </p>
+      </ion-label>
+    </ion-item>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="videocam-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="call-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="isAllowScroll" [scrollEvents]="isAllowScrollEvents" (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"
+  style="--background: url(../assets/img/bg/{{imageBg}}.svg);background-color: {{imageBg ? 'transparent' : 'var(--ion-background-color, #fff)' }};">
+
+  <app-chat-group [chats]="chats" [isPageScrolling]="isPageScrolling"></app-chat-group>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar style="height: auto;">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="add-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-textarea autoGrow rows="1" [placeholder]="'messages_title'"></ion-textarea>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="camera-outline" color="primary"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="mic-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
