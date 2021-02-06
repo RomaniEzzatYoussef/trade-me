@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'auth',
     loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthPageModule)
   },
+  {
+    path: 'phone-sign',
+    loadChildren: () => import('./pages/phone-sign/phone-sign.module').then( m => m.PhoneSignPageModule)
+  },
 ];
 
 @NgModule({

@@ -17,6 +17,6 @@ export class SlidesComponent implements OnInit {
   ngOnInit() {}
 
   signIn() {
-    this.router.navigate(['auth']);
+    this.router.navigate(['phone-sign']);
   }
 }

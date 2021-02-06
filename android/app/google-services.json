@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "893296785148",
+    "project_id": "trade-me-bd534",
+    "storage_bucket": "trade-me-bd534.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893296785148:android:b8114f51935ccf1bc88979",
+        "android_client_info": {
+          "package_name": "com.romani.trademe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893296785148-l7p41u8af199rgb1f7bkl1vl3oe3n1fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC-b-7yM52Jg6CEtoUzcNHy2U5h1oeEKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893296785148-l7p41u8af199rgb1f7bkl1vl3oe3n1fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

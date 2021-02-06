@@ -6,8 +6,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { MomentModule } from 'ngx-moment';
 
-import { ChatGroupComponent } from '../../components/chat-group/chat-group.component';
-import { ChatItemComponent } from '../../components/chat-item/chat-item.component';
+import { ChatGroupComponent } from './chat-group.component';
+import { ChatItemComponent } from '../chat-item/chat-item.component';
 
 @NgModule({
   imports: [
